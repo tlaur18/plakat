@@ -14,3 +14,9 @@ def tillykke(stolthedsniveau):
 class Kage:
     def spis():
         pass
+
+class Glæde:
+    pass
+
+class Gaver:
+    pass
