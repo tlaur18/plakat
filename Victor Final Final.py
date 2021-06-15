@@ -8,6 +8,10 @@ readonly = None
 class Den_Falske_Tysker():
     pass
 
+class Liv():
+    def nyd():
+        pass
+
 def sov():
     pass
 
@@ -22,7 +26,7 @@ def make_it_rain():
 # To Victor
 import sys
 from urllib.request import urlopen
-from flask import Flask, render_template
+from flask import Flask, Champagne
 from SDU import Tolvtal
 from Familie import Glæde, Gaver, Kage
 
@@ -40,19 +44,18 @@ class Victor():
         while i_live:
             Kage.spis()
             sov()
-            for værdi in værdier: nyd(værdi)
+            for værdi in værdier: Liv.nyd(værdi)
 
         if job:
             make_it_rain()
         else:
             hjemløs = True
 
-        final const readonly Signe = Den_Falske_Tysker("Cand.mag. i Kultur og Formidling")
+        final const readonly Signe = Den_Falske_Tysker("Cand.mag. i Kultur og Formidling")  # Tillykke Signe
 
         app = Flask("Victor Final Final")
         @app.route('/Tillykke') # Fra Thomas og Rosa
         def fejring_24062021():
-            # return render_template("HipHipHurra.html")
             return urlopen('https://raw.githubusercontent.com/tlaur18/plakat/main/templates/HipHipHurra.html').read()
 
         @app.route('/favicon.ico')
@@ -61,7 +64,7 @@ class Victor():
 
         app.run(host='0.0.0.0', port=5005)
 
-        # TODO: *Noget der skal gøres i fremtiden*
+        # TODO: Do what makes you happy :-)
 
 
 # ---------------- ALT HERUDNER KOMMER IKKE MED PÅ PLAKATEN --------------------------
@@ -73,4 +76,3 @@ class Victor():
             Glæde
             Gaver
 
-Victor()
